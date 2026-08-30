@@ -1,0 +1,22 @@
+node_modules/  echo .env  echo *.log 
+# Secrets / config — never commit real env files
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+
+# Runtime data (contains customer names / addresses; the app recreates it)
+data/orders.json
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
